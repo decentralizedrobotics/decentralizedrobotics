@@ -1,0 +1,18 @@
+site_name: Decentralized Robotics
+repo_url: https://github.com/decentralizedrobotics/decentralizedrobotics
+edit_uri: edit/main/docs/
+nav:
+  - Home: index.md
+  - Getting Started: GettingStarted/index.md
+theme: material
+markdown_extensions:
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+use_directory_urls: false
+strict: true
+plugins:
+  - search
+  - macros
+  - git-authors
