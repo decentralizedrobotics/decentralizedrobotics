@@ -3,16 +3,53 @@ repo_url: https://github.com/decentralizedrobotics/decentralizedrobotics
 edit_uri: edit/main/docs/
 nav:
   - Home: index.md
-  - Getting Started: GettingStarted/index.md
-theme: material
+  - Getting Started: 
+    - Concepts: GettingStarted/Concepts.md
+    - Robot: GettingStarted/Robot.md
+    - Operator: GettingStarted/Operator.md
+  - About: 
+    - Background: About/Background.md
+    - Support: About/Support.md
+  - Other Topics:
+    - 'Quick SSH Access': Other/Quick-SSH-Access.md
+  - Developer:
+    - 'Developer Guide': Developer/Guide.md
+
+# Theme
+theme:
+  name: material
+  logo: assets/Bubbles.png
+  features:
+    - navigation.sections
+    - content.tabs.link
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+extra_css:
+  - stylesheets/extra.css
+
 markdown_extensions:
-  - pymdownx.tabbed
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences
   - pymdownx.highlight:
       use_pygments: true
+  - footnotes
 use_directory_urls: false
-strict: true
+strict: false
 plugins:
   - search
   - macros
   - git-authors
+  - mkdocs-video
