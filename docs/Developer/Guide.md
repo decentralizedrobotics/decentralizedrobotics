@@ -5,7 +5,6 @@ Decentralized Robotics includes a ROS 2 Web Bridge implemented in Typescript, wh
 npm install @polyhobbyist/ros2
 ```
 
-
 ## Babylon.js ROS 2 User Interface ![coming soon](https://img.shields.io/badge/coming%20soon-8A2BE2)
 Decentralized Robotics includes a Babylon.js ROS 2 User Interface implemented in Typescript, which can be used by Web Applications, Electron or WASM applications. 
 

@@ -1,7 +1,9 @@
 This page decsribes a way to quickly establish a libp2p connection between a computer and your robot using an SSH tunnel. 
 You can route DDS Router traffic over this tunnel to connect to your robot's DDS network, or use the Visual Studio Code ROS Extension to remotely debug your robot.
 
-> NOTE: The IPFS Swarm stream used below is considered experimental, pending more documentation and testing. 
+!!! warning
+
+The IPFS Swarm stream used below is considered experimental, pending more documentation and testing. 
 
 === "Robot Setup"
 
