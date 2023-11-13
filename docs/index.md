@@ -17,4 +17,9 @@ This project consists of several components:
 
 ## Introduction Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EmJA8BE7EoM?si=-S8gjCHA0w0_a_oP&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e5n7-9WroSA?si=Cxpar4ageV_2Ut6b" title="Decentralized Robotics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+!!! note
+
+This project is currently bootstrapping, and will be made available to a select few during initial bringup to minimize churn and support. If you'd like to be considered for early access, please [post an issue to this github repo](https://github.com/decentralizedrobotics/decentralizedrobotics/issues/new?assignees=decentralizedrobotics&labels=&projects=&template=request-access.md&title=Request+Access). 
