@@ -1,3 +1,4 @@
+mkdocs-material
 mkdocs-bootswatch
 mkdocs-macros-plugin
 mkdocs-git-authors-plugin
