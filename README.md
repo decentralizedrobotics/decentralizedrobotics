@@ -15,6 +15,3 @@ This project consists of several components:
 
 - `babylon_ros` - a Typescript library which connects to a ROS 2 bridge using ROS2.ts and renders the robot and UI in 3D and WebXR using Babylon.js.
 
-## Introduction Video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e5n7-9WroSA?si=Cxpar4ageV_2Ut6b" title="Decentralized Robotics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
