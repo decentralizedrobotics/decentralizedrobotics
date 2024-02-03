@@ -15,3 +15,4 @@ This project consists of several components:
 
 - `babylon_ros` - a Typescript library which connects to a ROS 2 bridge using ROS2.ts and renders the robot and UI in 3D and WebXR using Babylon.js.
 
+- `dero_sharp` - a transport for [ROS#](https://github.com/siemens/ros-sharp), which uses [dotnet-libp2p](https://github.com/NethermindEth/dotnet-libp2p). Designed toallow Unity or other C# Applicationsto visualize and control robots without centralized servers. ![Future](https://img.shields.io/badge/Future-8A2BE2)
