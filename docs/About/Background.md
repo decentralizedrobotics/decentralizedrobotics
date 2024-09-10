@@ -10,9 +10,6 @@ I'd like to thank the developers and communities of the following projects for t
  * [RobotWebTools developers](https://github.com/robotwebtools)
  * [ROS rclnodejs developers](https://github.com/RobotWebTools/rclnodejs)
 
-## License
-I'm releasing the code available under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). I'm doing this because I want to encourage others to use this work and to contribute back to the project. If you use this work, please link back to this website. If you make a video, please link back to [@polyhobbyist on YouTube](https://youtube.com/@polyhobbyist).
-
 ## Contributing
 Please refer to the contribution guidelines in the individual projects for details on how to contribute to this project.
 
