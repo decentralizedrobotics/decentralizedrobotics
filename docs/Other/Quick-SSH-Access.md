@@ -1,4 +1,6 @@
-This page decsribes a way to quickly establish a libp2p connection between a computer and your robot using an SSH tunnel. 
+# SSH Bridge
+
+This page describes a way to quickly establish a libp2p connection between a computer and your robot using an SSH tunnel.
 You can route DDS Router traffic over this tunnel to connect to your robot's DDS network, or use the Visual Studio Code ROS Extension to remotely debug your robot.
 
 !!! warning
@@ -101,10 +103,12 @@ The IPFS Swarm stream used below is considered experimental, pending more docume
         ```
 
 ## SSH to your Robot
+
 You can now open an SSH connection to your robot using the following command:
-```bash
-ssh -p 2222 user@127.0.0.1
-```
+
+    ```bash
+    ssh -p 2222 user@127.0.0.1
+    ```
 
 or use Visual Studio Code's remote extension pack to connect to your robot.
 
@@ -112,10 +116,8 @@ The way this works is that the SSH client will attempt to connect to a local por
 
 On the Robot side, the IPFS daemon will unpackage the SSH connection and forward it to the local SSH server.
 
-
-
-
 ## References
+
 - [IPFS Kubo](https://docs.ipfs.tech/concepts/kubo/)
 - [IPFS Swarm](https://docs.ipfs.tech/concepts/swarm/)
 - [IPFS Relay](https://docs.ipfs.tech/concepts/relay/)

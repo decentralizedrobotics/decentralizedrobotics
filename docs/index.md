@@ -1,4 +1,5 @@
-# Decetralized Robotics (DeRo) ![Coming Soon](https://img.shields.io/badge/Coming%20Soon-8A2BE2)
+# Decentralized Robotics (DeRo) ![Coming Soon](https://img.shields.io/badge/Coming%20Soon-8A2BE2)
+
 Software and components for secure serverless monitoring and control your ROS 2 based robots using Web 3 technology.
 
 Decentralized Robotics does not replace traditional DDS based ROS 2 communication, but rather augments it with a secure and decentralized cryptographic identity and communication channel using [libp2p](https://libp2p.io) and the [Interplanetary Filesystem](http://ipfs.io).
@@ -19,7 +20,6 @@ This project consists of several components:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e5n7-9WroSA?si=Cxpar4ageV_2Ut6b" title="Decentralized Robotics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
 !!! warning
 
-This project is currently bootstrapping, and will be made available to a select few during initial bringup to minimize churn and support. If you'd like to be considered for early access, please [post an issue to this github repo](https://github.com/decentralizedrobotics/decentralizedrobotics/issues/new?assignees=decentralizedrobotics&labels=&projects=&template=request-access.md&title=Request+Access). 
+This project is currently bootstrapping, and will be made available to a select few during initial bringup to minimize churn and support. If you'd like to be considered for early access, please [post an issue to this github repo](https://github.com/decentralizedrobotics/decentralizedrobotics/issues/new?assignees=decentralizedrobotics&labels=&projects=&template=request-access.md&title=Request+Access).

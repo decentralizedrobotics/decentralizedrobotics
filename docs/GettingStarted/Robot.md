@@ -1,8 +1,9 @@
+# Robot
 
 This guide will walk you through the steps to install the RosWeb3Bridge your robot and to provision it with a routable cryptographic identity and set up user access. Before using this guide, please read the [Concepts](Concepts.md) guide.
 
-
 ## Robot Setup
+
 === "Linux"
 
     ```bash
