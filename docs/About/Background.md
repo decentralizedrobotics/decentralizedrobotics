@@ -1,8 +1,6 @@
 # About
 
-[Ranch Hand Robotics](http://youtube.com/@rh_robotics) provides education materials, developer tooling and solutions for Outdoor Robotics. Decentralized Robotics was built out of a need to use robots on a homestead - a place where blanketing the property with Wifi is not feasible and cell coverage is non-existent. I've found that others have similar situations and have been looking for a solution - so I share this work freely.
-
-This work builds on the work of others, and we are grateful for their contributions. 
+[Ranch Hand Robotics](http://youtube.com/@rh_robotics) provides education materials, developer tooling and solutions for Outdoor Robotics. Decentralized Robotics was built out of a need to use robots on a homestead - a place where blanketing the property with Wifi is not feasible and cell coverage is non-existent. 
 
 I'd like to thank the developers and communities of the following projects for their work which has made this project possible:
 
@@ -26,7 +24,7 @@ If you are able to, please support Open Robotics Foundation, Protocol Labs and t
 
 ## Sponsors
 
-Ranch Hand Robotics is funded by Github Sponsorships and Patreon. If you are able, please consider funding:
+Ranch Hand Robotics is funded by Github Sponsorships and Patreon. If you are able, please consider sponsoring the project:
 
 * [Github](https://github.com/sponsors/ranch-hand-robotics)
 * [Patreon](patreon.com/RanchHandRobotics)
