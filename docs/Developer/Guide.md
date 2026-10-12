@@ -1,3 +1,6 @@
+!!! info "Early development · Sponsor early access"
+	DeRo is in early development, and APIs, packages, and setup instructions are evolving. The Coming Soon components below are not production-ready. Early access is available to Ranch Hand Robotics LLC sponsors; see [Sponsor early access](../About/Support.md#sponsor-early-access) to request access.
+
 ## ROS2.ts ![coming soon](https://img.shields.io/badge/coming%20soon-8A2BE2)
 
 Decentralized Robotics includes a ROS 2 Web Bridge implemented in Typescript, which can be used by Web Applications, Electron or WASM applications. The bridge is available as an npm package.

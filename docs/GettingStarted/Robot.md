@@ -1,5 +1,8 @@
 # Robot
 
+!!! info "Early development · Sponsor early access"
+    DeRo is in early development, and robot setup is evolving. The planned workflow below is not a production-ready setup. Early access is available to Ranch Hand Robotics LLC sponsors; see [Sponsor early access](../About/Support.md#sponsor-early-access) to request access.
+
 This guide will walk you through the steps to install the RosWeb3Bridge your robot and to provision it with a routable cryptographic identity and set up user access. Before using this guide, please read the [Concepts](Concepts.md) guide.
 
 ## Robot Setup ![Coming Soon](https://img.shields.io/badge/Coming%20Soon-8A2BE2)

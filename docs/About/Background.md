@@ -1,6 +1,8 @@
 # About
 
-[Ranch Hand Robotics](http://youtube.com/@rh_robotics) provides education materials, developer tooling and solutions for Outdoor Robotics. Decentralized Robotics was built out of a need to use robots on a homestead - a place where blanketing the property with Wifi is not feasible and cell coverage is non-existent. 
+[Ranch Hand Robotics LLC](http://youtube.com/@rh_robotics) provides education materials, developer tooling and solutions for Outdoor Robotics. Decentralized Robotics was built out of a need to use robots on a homestead - a place where blanketing the property with Wifi is not feasible and cell coverage is non-existent.
+
+Follow [Ranch Hand Robotics LLC on X (@rh_robotics)](https://x.com/rh_robotics).
 
 I'd like to thank the developers and communities of the following projects for their work which has made this project possible:
 
@@ -24,7 +26,6 @@ If you are able to, please support Open Robotics Foundation, Protocol Labs and t
 
 ## Sponsors
 
-Ranch Hand Robotics is funded by Github Sponsorships and Patreon. If you are able, please consider sponsoring the project:
+Ranch Hand Robotics LLC is funded by GitHub Sponsors. Ranch Hand Robotics LLC sponsors get DeRo early access. See [Sponsor early access](Support.md#sponsor-early-access) for the project's early-development status and how to request access.
 
-* [Github](https://github.com/sponsors/ranch-hand-robotics)
-* [Patreon](patreon.com/RanchHandRobotics)
+* [GitHub Sponsors](https://github.com/sponsors/ranch-hand-robotics)

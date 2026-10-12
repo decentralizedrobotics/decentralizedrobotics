@@ -1,4 +1,6 @@
 site_name: Decentralized Robotics
+site_author: Ranch Hand Robotics LLC
+site_description: Robots and people, connected beyond the grid. Open tools, interfaces, and networking for traditional and mesh networks.
 repo_url: https://github.com/decentralizedrobotics/decentralizedrobotics
 edit_uri: edit/main/docs/
 nav:
@@ -18,25 +20,27 @@ nav:
 # Theme
 theme:
   name: material
-  logo: assets/Bubbles.png
+  custom_dir: overrides
+  logo: assets/dero-mark.svg
+  favicon: assets/dero-mark.svg
+  font: false
   features:
     - navigation.sections
     - content.tabs.link
   palette:
     - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+      primary: custom
+      accent: custom
 extra_css:
   - stylesheets/extra.css
+watch:
+  - overrides
+  - .mailmap
+extra:
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/rh_robotics
+      name: Ranch Hand Robotics LLC on X (@rh_robotics)
 
 markdown_extensions:
   - admonition

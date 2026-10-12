@@ -1,16 +1,18 @@
 ---
-name: Request Access
-about: Use this template to request early access to decentralized robotics.
+name: Sponsor early access
+about: Ranch Hand Robotics LLC sponsors can use this template to request DeRo early access.
 title: Request Access
 labels: ''
 assignees: decentralizedrobotics
 
 ---
 
-I'd like to request early access to the decentralized robotics software stack.
+I'd like to request DeRo early access as a Ranch Hand Robotics LLC sponsor.
 
-## Why I want access.
+DeRo is in early development, and tools and setup instructions are evolving. See [Sponsor early access](https://github.com/decentralizedrobotics/decentralizedrobotics/blob/main/docs/About/Support.md#sponsor-early-access) for details.
 
-## What will it be used for?
+This issue is public. Include only your GitHub handle and a brief, non-sensitive use case. Do not post financial information, payment details, receipts, private keys, tokens, or other secrets.
 
-## Will you contribute back?
+## GitHub handle
+
+## Intended use case

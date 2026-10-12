@@ -1,0 +1,179 @@
+{% extends "main.html" %}
+
+{% block htmltitle %}<title>Decentralized Robotics</title>{% endblock %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'stylesheets/home.css' | url }}">
+{% endblock %}
+
+{% block header %}
+<header class="dero-header">
+  <a class="dero-brand" href="{{ 'index.html' | url }}" aria-label="Decentralized Robotics home">
+    <img src="{{ 'assets/dero-mark.svg' | url }}" width="40" height="40" alt="">
+    <span>Decentralized Robotics<span class="dero-brand-sub">BY RANCH HAND ROBOTICS LLC</span></span>
+  </a>
+  <nav class="dero-desktop-nav" aria-label="Main navigation">
+    <a href="#platform">The platform</a>
+    <a href="#networks">The network</a>
+    <a href="{{ 'GettingStarted/Concepts.html' | url }}">Documentation <span aria-hidden="true">↗</span></a>
+  </nav>
+  <a class="dero-nav-cta" href="#get-started">Start building <span aria-hidden="true">↗</span></a>
+  <details class="dero-mobile-nav">
+    <summary>Menu <span aria-hidden="true">＋</span></summary>
+    <nav aria-label="Mobile navigation">
+      <a href="#platform">The platform</a>
+      <a href="#networks">The network</a>
+      <a href="{{ 'GettingStarted/Concepts.html' | url }}">Documentation</a>
+      <a href="#get-started">Start building</a>
+      <a href="{{ config.repo_url }}">GitHub ↗</a>
+      <a href="https://x.com/rh_robotics">X · @rh_robotics ↗</a>
+    </nav>
+  </details>
+</header>
+{% endblock %}
+
+{% block tabs %}{% endblock %}
+{% block site_nav %}{% endblock %}
+
+{# The landing page uses native HTML interactions; the guides retain Material's JS. #}
+{% block scripts %}{% endblock %}
+
+{% block container %}
+<div class="dero-home" id="main-content">
+  <svg class="dero-icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="icon-network" viewBox="0 0 32 32"><path d="m8 9 16 1M8 9l7 16m9-15-9 15"/><circle cx="8" cy="9" r="3"/><circle cx="24" cy="10" r="3"/><circle cx="15" cy="25" r="3"/></symbol>
+      <symbol id="icon-radio" viewBox="0 0 32 32"><path d="M16 17v11m-6 0h12M9 11a7 7 0 0 1 14 0M4 11a12 12 0 0 1 24 0"/><circle cx="16" cy="12" r="2"/></symbol>
+      <symbol id="icon-robot" viewBox="0 0 32 32"><rect x="5" y="10" width="22" height="16" rx="2"/><path d="M16 10V5M10 27v3m12-3v3M2 16v6m28-6v6m-19-1h10"/><circle cx="11" cy="16" r="1"/><circle cx="21" cy="16" r="1"/><circle cx="16" cy="4" r="1"/></symbol>
+      <symbol id="icon-code" viewBox="0 0 32 32"><path d="m10 9-7 7 7 7m12-14 7 7-7 7M19 5l-6 22"/></symbol>
+      <symbol id="icon-person" viewBox="0 0 32 32"><circle cx="16" cy="10" r="5"/><path d="M5 28v-3a11 11 0 0 1 22 0v3M11 25h10"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    </defs>
+  </svg>
+
+  <section class="dero-hero dero-section" aria-labelledby="connection-beyond-the-grid">
+    <div class="dero-hero-copy">
+      <div class="dero-eyebrow"><span class="dero-status-dot"></span> INDEPENDENT BY DESIGN</div>
+      <h1 id="connection-beyond-the-grid" tabindex="-1">Connection.<br>Beyond the <em>grid.</em></h1>
+      <p class="dero-hero-description">Robots. People. Wherever the work takes you.</p>
+      <p class="dero-hero-detail">Meet Decentralized Robotics. An open toolkit that connects robots and people over traditional and mesh networks. From rich teleoperation to the smallest signal that matters.</p>
+      <div class="dero-actions">
+        <a class="dero-button dero-button-primary" href="#get-started">Explore DeRo <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a>
+        <a class="dero-text-link" href="{{ config.repo_url }}">View on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="dero-hero-note"><span class="dero-small-cross" aria-hidden="true">+</span> OPEN SOURCE <span>/</span> ROS 2 NATIVE <span>/</span> BUILT FOR THE FIELD</div>
+    </div>
+    <div class="dero-hero-visual">
+      <div class="dero-visual-top"><span>FIELD SYSTEM / 001</span><span class="dero-teal">PEER-TO-PEER</span></div>
+      <img class="dero-rover" src="{{ 'assets/rhr-rover.svg' | url }}" width="900" height="740" alt="Ranch Hand Robotics LLC six-wheel robot with its top implement-lifting frame connected to a front bucket through paired lifting arms and mounting joints. The lift accepts accessories such as a bucket, fork, or snow blade." fetchpriority="high">
+      <div class="dero-visual-label dero-label-mesh"><span class="dero-status-dot"></span> MESH-CAPABLE<span class="dero-label-sub">NO CENTRAL POINT OF CONTROL</span></div>
+      <div class="dero-visual-label dero-label-radio"><svg aria-hidden="true"><use href="#icon-radio"/></svg><div>SMALL SIGNAL.<br>BIG POSSIBILITIES.</div></div>
+      <div class="dero-visual-bottom"><span>CONCEPT VISUALIZATION</span><span>LoRa <b> / </b> HaLow <b> / </b> IP</span></div>
+    </div>
+  </section>
+
+  <div class="dero-spec-strip" aria-label="Core technologies">
+    <span class="dero-spec-caption">ONE TOOLKIT.<br>MANY WAYS TO CONNECT.</span>
+    <span>ROS 2 <small>ROBOTICS</small></span>
+    <span>libp2p <small>PEER-TO-PEER</small></span>
+    <span>LoRa <small>LOW BANDWIDTH</small></span>
+    <span>Wi-Fi HaLow <small>SUB-GHz WI-FI</small></span>
+    <span>Mesh <small>BEYOND INFRASTRUCTURE</small></span>
+  </div>
+
+  <section class="dero-section dero-platform" id="platform" aria-labelledby="platform-title">
+    <div class="dero-section-heading">
+      <div><p class="dero-eyebrow">01 / THE PLATFORM</p><h2 id="platform-title">Less infrastructure.<br><span>More possibility.</span></h2></div>
+      <p>The field doesn’t come with a network.<br>Bring your own connection—not a whole<br class="dero-desktop-break"> new way of building robots.</p>
+    </div>
+    <div class="dero-feature-grid">
+      <article class="dero-feature">
+        <div class="dero-card-top"><svg aria-hidden="true"><use href="#icon-network"/></svg><span>01.1</span></div>
+        <h3>Peers, not dependencies.</h3>
+        <p>Connect people and robots over traditional or mesh networks. Decentralized communication puts the connection where it belongs: between the peers.</p>
+        <span class="dero-card-tag">DECENTRALIZED AT THE CORE</span>
+      </article>
+      <article class="dero-feature">
+        <div class="dero-card-top"><svg aria-hidden="true"><use href="#icon-radio"/></svg><span>01.2</span></div>
+        <h3>The right link for the job.</h3>
+        <p>Video when you have the bandwidth. Telemetry and commands when you don’t. Work across civilian radio stacks, including LoRa and Wi-Fi HaLow.</p>
+        <span class="dero-card-tag">HIGH & LOW BANDWIDTH</span>
+      </article>
+      <article class="dero-feature">
+        <div class="dero-card-top"><svg aria-hidden="true"><use href="#icon-robot"/></svg><span>01.3</span></div>
+        <h3>Your robot. Your stack.</h3>
+        <p>Extend ROS 2, don’t replace it. Add peer identity, networking, and operator interfaces alongside your existing DDS-based communication.</p>
+        <span class="dero-card-tag">BUILT TO WORK TOGETHER</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="dero-network-section" id="networks" aria-labelledby="a-network-for-the-way-you-work">
+    <div class="dero-section dero-network-inner">
+      <div class="dero-network-copy">
+        <p class="dero-eyebrow">02 / EVERY SIGNAL HAS A PURPOSE</p>
+        <h2 id="a-network-for-the-way-you-work">Big streams.<br>Small packets.<br><span>Same mission.</span></h2>
+        <p>A live view from the robot. A position update from the far edge of the property. Different needs deserve different links.</p>
+        <div class="dero-link-type"><span class="dero-line-swatch" aria-hidden="true"></span><div><h3>High-bandwidth links</h3><p>Video, rich interfaces, and teleoperation.<br>IP networks and Wi-Fi HaLow.</p></div></div>
+        <div class="dero-link-type"><span class="dero-line-swatch dero-dashed" aria-hidden="true"></span><div><h3>Low-bandwidth links</h3><p>Telemetry, status, and command & control.<br>Small, purposeful messages over LoRa.</p></div></div>
+        <p class="dero-network-caveat">Choose links for your hardware and conditions. Range and throughput depend on the radio, environment, and local regulations.</p>
+      </div>
+      <div class="dero-network-map">
+        <div class="dero-panel-heading"><span>NETWORK TOPOLOGY</span><span>ILLUSTRATIVE</span></div>
+        <svg viewBox="0 0 600 460" role="img" aria-labelledby="topology-title topology-description">
+          <title id="topology-title">People and robots, connected as peers</title>
+          <desc id="topology-description">An operator connects to a field robot over a high-bandwidth link. Dashed low-bandwidth links connect the robot, a mesh relay, and a remote robot. This is a conceptual topology, not live network status.</desc>
+          <defs><pattern id="map-grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#33382e" stroke-width=".6"/></pattern></defs>
+          <rect width="600" height="460" fill="url(#map-grid)"/>
+          <g fill="none" stroke="#454b3a" opacity=".55"><ellipse cx="310" cy="224" rx="225" ry="177"/><ellipse cx="310" cy="224" rx="169" ry="127"/><ellipse cx="310" cy="224" rx="106" ry="78"/></g>
+          <g fill="none" stroke-width="2"><path class="dero-map-high" d="M126 239 311 138" stroke="#8ae0cf"/><path d="m311 138 156 115-148 106-193-120m185-101 8 221" stroke="#cdb591" stroke-dasharray="5 7"/></g>
+          <g fill="#8ae0cf"><circle class="dero-map-packet" cx="218" cy="189" r="4"/><circle cx="126" cy="239" r="5"/></g>
+          <g class="dero-map-node" transform="translate(126 239)"><circle r="38"/><svg x="-17" y="-17" width="34" height="34"><use href="#icon-person"/></svg></g>
+          <g class="dero-map-node dero-map-node-primary" transform="translate(311 138)"><circle r="43"/><svg x="-19" y="-19" width="38" height="38"><use href="#icon-robot"/></svg></g>
+          <g class="dero-map-node" transform="translate(467 253)"><circle r="33"/><svg x="-15" y="-15" width="30" height="30"><use href="#icon-radio"/></svg></g>
+          <g class="dero-map-node" transform="translate(319 359)"><circle r="33"/><svg x="-15" y="-15" width="30" height="30"><use href="#icon-robot"/></svg></g>
+          <g class="dero-map-text" text-anchor="middle"><text x="126" y="300">OPERATOR</text><text x="311" y="72">FIELD ROBOT</text><text x="467" y="311">MESH RELAY</text><text x="319" y="419">REMOTE ROBOT</text></g>
+          <g class="dero-map-tag"><rect x="161" y="141" width="90" height="23" rx="2"/><text x="206" y="156" text-anchor="middle">IP / HaLow</text><rect x="376" y="175" width="58" height="23" rx="2"/><text x="405" y="190" text-anchor="middle">LoRa</text></g>
+        </svg>
+        <div class="dero-map-footer"><span><i></i> HIGH BANDWIDTH</span><span><i></i> LOW BANDWIDTH</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dero-section dero-toolkit" aria-labelledby="toolkit-title">
+    <div class="dero-section-heading"><div><p class="dero-eyebrow">03 / OPEN BY NATURE</p><h2 id="toolkit-title">Not a black box.<br><span>A building kit.</span></h2></div><p>Use the pieces you need. Build what’s next.<br>Explore the tools behind the connection.</p></div>
+    <div class="dero-toolkit-layout">
+      <div class="dero-toolkit-intro"><svg aria-hidden="true"><use href="#icon-code"/></svg><h3>From robot to browser.</h3><p>Bridges, command-line tools, and interfaces built around ROS 2, libp2p, and IPFS. Designed to give your project a starting point, not a ceiling.</p><a class="dero-text-link" href="{{ 'Developer/Guide.html' | url }}">Explore the developer guide <span aria-hidden="true">↗</span></a></div>
+      <div class="dero-components">
+        <details class="dero-component" open><summary><span class="dero-component-number">01</span><span>RosWeb3Bridge<small>THE ROBOT CONNECTION</small></span><span class="dero-expand" aria-hidden="true">+</span></summary><p>The ROS bridge protocol over libp2p. Connect your ROS 2 robot to a peer-to-peer network without replacing its local DDS communication. <a href="{{ 'GettingStarted/Robot.html' | url }}">Robot guide ↗</a></p></details>
+        <details class="dero-component"><summary><span class="dero-component-number">02</span><span>dero CLI<small>IDENTITY & PROVISIONING</small></span><span class="dero-expand" aria-hidden="true">+</span></summary><p>Provision robot identities and associate users from the command line. Start with cryptographic peer identities for robots and people. <a href="{{ 'GettingStarted/Concepts.html' | url }}">Understand identities ↗</a></p></details>
+        <details class="dero-component"><summary><span class="dero-component-number">03</span><span>dero_web<small>THE OPERATOR INTERFACE</small></span><span class="dero-expand" aria-hidden="true">+</span></summary><p>An IPFS-hosted web application for monitoring and controlling your robot through the libp2p network. <a href="{{ 'GettingStarted/Operator.html' | url }}">Operator guide ↗</a></p></details>
+        <details class="dero-component"><summary><span class="dero-component-number">04</span><span>ROS2.ts + babylon_ros<small>BUILD YOUR OWN EXPERIENCE</small></span><span class="dero-expand" aria-hidden="true">+</span></summary><p>TypeScript tools for ROS 2 in the browser and Node.js, with Babylon.js-powered 3D and WebXR visualization. <a href="{{ 'Developer/Guide.html' | url }}">Developer guide ↗</a></p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="dero-section dero-get-started" id="get-started" aria-labelledby="start-building">
+    <div class="dero-section-heading"><div><p class="dero-eyebrow">04 / YOUR NEXT CONNECTION</p><h2 id="start-building">Take it into the field.</h2></div><a class="dero-text-link" href="{{ 'GettingStarted/Concepts.html' | url }}">New here? Start with the concepts <span aria-hidden="true">↗</span></a></div>
+    <div class="dero-start-grid">
+      <a class="dero-start-card" href="{{ 'GettingStarted/Robot.html' | url }}"><svg aria-hidden="true"><use href="#icon-robot"/></svg><h3>Connect a robot.</h3><p>Provision an identity, set up the bridge, and bring your ROS 2 robot into the network.</p><span>ROBOT SETUP <b aria-hidden="true">↗</b></span></a>
+      <a class="dero-start-card" href="{{ 'GettingStarted/Operator.html' | url }}"><svg aria-hidden="true"><use href="#icon-person"/></svg><h3>Take the controls.</h3><p>Create your operator identity and learn how to connect, monitor, and interact.</p><span>OPERATOR GUIDE <b aria-hidden="true">↗</b></span></a>
+      <a class="dero-start-card" href="{{ 'Developer/Guide.html' | url }}"><svg aria-hidden="true"><use href="#icon-code"/></svg><h3>Build something new.</h3><p>Explore the libraries and create your own applications, interfaces, and workflows.</p><span>DEVELOPER GUIDE <b aria-hidden="true">↗</b></span></a>
+    </div>
+    <aside class="dero-early-access"><div><span class="dero-status-dot"></span><strong>Back the project. Get early access.</strong><p>DeRo early access is available to Ranch Hand Robotics LLC sponsors through GitHub Sponsors. The project is in active development; help shape what comes next.</p></div><a class="dero-button dero-button-outline" href="{{ 'About/Support.html' | url }}#sponsor-early-access">Sponsor early access <span aria-hidden="true">↗</span></a></aside>
+  </section>
+
+  <section class="dero-section dero-story" aria-labelledby="story-title">
+    <div><p class="dero-eyebrow">FROM RANCH HAND ROBOTICS LLC</p><h2 id="story-title">Built for the world<br><span>outside the lab.</span></h2><p>DeRo starts with a simple idea: useful robotics shouldn’t end where the infrastructure does. See the thinking behind the project.</p><a class="dero-text-link" href="{{ 'About/Background.html' | url }}">Our background <span aria-hidden="true">↗</span></a></div>
+    <div class="dero-video"><div class="video-wrapper"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e5n7-9WroSA" title="Introduction to Decentralized Robotics by Ranch Hand Robotics LLC" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><span>PROJECT BRIEFING <b>/</b> DECENTRALIZED ROBOTICS</span></div>
+  </section>
+</div>
+{% endblock %}
+
+{% block footer %}
+<footer class="dero-footer">
+  <div class="dero-footer-top"><a class="dero-brand" href="{{ 'index.html' | url }}" aria-label="DeRo home"><img src="{{ 'assets/dero-mark.svg' | url }}" width="36" height="36" alt=""><span>DeRo<span class="dero-brand-sub">DECENTRALIZED ROBOTICS</span></span></a><p>Independent robots. Connected possibilities.</p><a class="dero-back-top" href="#connection-beyond-the-grid">Back to top ↑</a></div>
+  <div class="dero-footer-bottom"><span>A RANCH HAND ROBOTICS LLC PROJECT</span><nav aria-label="Footer navigation"><a href="{{ 'GettingStarted/Concepts.html' | url }}">Documentation</a><a href="{{ config.repo_url }}">GitHub ↗</a><a href="https://x.com/rh_robotics">X · @rh_robotics ↗</a><a href="{{ 'About/Support.html' | url }}">Support the project ↗</a></nav><span>OPEN SOURCE. OPEN HORIZONS.</span></div>
+</footer>
+{% endblock %}

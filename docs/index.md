@@ -1,25 +1,23 @@
-# Decentralized Robotics (DeRo) ![Coming Soon](https://img.shields.io/badge/Coming%20Soon-8A2BE2)
+---
+title: Decentralized Robotics
+description: An open toolkit connecting robots and people over traditional and mesh networks, from high-bandwidth teleoperation to low-bandwidth telemetry and command and control.
+template: home.html
+hide: [navigation, toc]
+---
 
-Software and components for secure serverless monitoring and control your ROS 2 based robots using Web 3 technology.
+# Connection. Beyond the grid.
 
-Decentralized Robotics does not replace traditional DDS based ROS 2 communication, but rather augments it with a secure and decentralized cryptographic identity and communication channel using [libp2p](https://libp2p.io) and the [Interplanetary Filesystem](http://ipfs.io).
+Decentralized Robotics (DeRo) is a Ranch Hand Robotics LLC project connecting robots and people through tools, interfaces, and networking components for traditional and mesh networks.
 
-This project consists of several components:
+## A network for the way you work
 
-- `RosWeb3Bridge` – an implementation of the [ROS bridge protocol](https://github.com/RobotWebTools/rosbridge_suite/blob/ros2/ROSBRIDGE_PROTOCOL.md) over libp2p.
+High-bandwidth links carry video and teleoperation. Low-bandwidth links carry telemetry and command and control. DeRo supports civilian radio stacks including LoRa and Wi-Fi HaLow.
 
-- `dero` – a command line interface for provisioning Robots and associating users.
+## Start building
 
-- `dero_web` – a Web Application, hosted on IPFS, for monitoring or controlling your robot using libp2p swarm.
+- [Understand the concepts](GettingStarted/Concepts.md)
+- [Connect a robot](GettingStarted/Robot.md)
+- [Become an operator](GettingStarted/Operator.md)
+- [Explore the developer guide](Developer/Guide.md)
 
-- `ROS2.ts` - a Typescript library for interacting with ROS 2 from a web browser or a node.js application.
-
-- `babylon_ros` - a Typescript library which connects to a ROS 2 bridge using ROS2.ts and renders the robot and UI in 3D and WebXR using Babylon.js.
-
-## Introduction Video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/e5n7-9WroSA?si=Cxpar4ageV_2Ut6b" title="Decentralized Robotics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-!!! warning
-
-This project is currently bootstrapping, and will be made available to a select few during initial bringup to minimize churn and support. If you'd like to be considered for early access, please [post an issue to this github repo](https://github.com/decentralizedrobotics/decentralizedrobotics/issues/new?assignees=decentralizedrobotics&labels=&projects=&template=request-access.md&title=Request+Access).
+DeRo is in early development, and setup instructions are evolving. Early access is available to Ranch Hand Robotics LLC sponsors. See [Sponsor early access](About/Support.md#sponsor-early-access) for sponsorship options and how to request access.

@@ -1,3 +1,40 @@
+/* Shared Flat Dark Earth theme: the guides belong to the same world as the landing page. */
+:root {
+  --md-text-font: "Inter", "Segoe UI", sans-serif;
+  --md-code-font: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #191a17;
+  --md-default-fg-color: #e9e8e0;
+  --md-default-fg-color--light: #b8b8aa;
+  --md-default-fg-color--lighter: #818477;
+  --md-default-fg-color--lightest: #35372e;
+  --md-primary-fg-color: #20221c;
+  --md-primary-bg-color: #e9e8e0;
+  --md-accent-fg-color: #8ae0cf;
+  --md-typeset-a-color: #cdb591;
+  --md-code-bg-color: #22241e;
+  --md-code-fg-color: #e2d6c0;
+  --md-footer-bg-color: #121410;
+  --md-footer-bg-color--dark: #121410;
+}
+
+.md-header {
+  border-bottom: 1px solid #35372e;
+  box-shadow: none;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+  font-weight: 650;
+  letter-spacing: -.025em;
+}
+
+.md-typeset a:hover { color: var(--md-accent-fg-color); }
+.md-typeset .admonition { background-color: #20221c; }
+.md-nav__link--active { color: #dfc7a3; }
+
+/* Preserve responsive video embeds throughout the documentation. */
 .video-wrapper {
   position: relative;
   display: block;

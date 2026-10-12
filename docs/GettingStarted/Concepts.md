@@ -1,5 +1,8 @@
 # Concepts
 
+!!! info "Early development · Sponsor early access"
+	DeRo is in early development, and these concepts and setup instructions are evolving. Early access is available to Ranch Hand Robotics LLC sponsors; see [Sponsor early access](../About/Support.md#sponsor-early-access) to request access.
+
 This guide will provide a high level overview of concepts needed to set up your robots and users. 
 
 ## Cryptographic identity

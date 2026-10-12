@@ -1,5 +1,8 @@
 # Operator
 
+!!! info "Early development · Sponsor early access"
+	DeRo is in early development, and the operator interface and setup are evolving. The workflow below is not a production-readiness guarantee. Early access is available to Ranch Hand Robotics LLC sponsors; see [Sponsor early access](../About/Support.md#sponsor-early-access) to request access.
+
 When someone wants to access a Robot using they can use the robotics console available at [https://operator.decentralizedrobotics.xyz](https://operator.decentralizedrobotics.xyz).
 
 ## Create a User identity
