@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="740" viewBox="0 0 900 740" fill="none">
+  <title>Ranch Hand Robotics LLC robot with implement lift and bucket</title>
+  <desc>Reference-inspired illustration of the Ranch Hand Robotics LLC six-wheel robot. Its top lifting frame connects through paired arms and front mounting joints to an attached bucket. The lift carries interchangeable accessories such as a bucket, fork, or snow blade; it is not a roof rack. An open tubular chassis, exposed components, and teal network graphics complete the illustration. This is a concept illustration, not a mechanical specification.</desc>
+  <defs>
+    <radialGradient id="ambient"><stop stop-color="#777052" stop-opacity=".19"/><stop offset="1" stop-color="#191a17" stop-opacity="0"/></radialGradient>
+    <radialGradient id="shadow"><stop stop-color="#070a07" stop-opacity=".95"/><stop offset="1" stop-color="#070a07" stop-opacity="0"/></radialGradient>
+    <radialGradient id="rubber" cx="42%" cy="38%" r="65%"><stop stop-color="#10150f"/><stop offset=".38" stop-color="#080d09"/><stop offset=".58" stop-color="#1e251d"/><stop offset=".79" stop-color="#363d32"/><stop offset="1" stop-color="#11170f"/></radialGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b6156"/><stop offset=".24" stop-color="#d1d2bd"/><stop offset=".39" stop-color="#e8e6d3"/><stop offset=".59" stop-color="#9a9d89"/><stop offset="1" stop-color="#3c4536"/></linearGradient>
+    <linearGradient id="cylinder" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#343d31"/><stop offset=".32" stop-color="#989f8c"/><stop offset=".48" stop-color="#d9dac7"/><stop offset=".63" stop-color="#8c947f"/><stop offset="1" stop-color="#303b2d"/></linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a9ac98"/><stop offset=".2" stop-color="#909784"/><stop offset="1" stop-color="#58634f"/></linearGradient>
+    <linearGradient id="earth" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d2ba91"/><stop offset="1" stop-color="#887451"/></linearGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse" patternTransform="matrix(.94 -.32 .78 .48 165 500)"><path d="M52 0H0V52" stroke="#8e936a" stroke-opacity=".2"/></pattern>
+    <radialGradient id="fade"><stop offset=".2" stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></radialGradient>
+    <mask id="ground-mask"><ellipse cx="470" cy="507" rx="405" ry="200" fill="url(#fade)"/></mask>
+
+    <!-- Consistent axonometric projection: x = 165 + .94 X + .78 Y;
+         y = 500 - .32 X + .48 Y - Z. Three equally spaced axles. -->
+    <g id="wheel">
+      <circle r="64" transform="matrix(.94 -.32 0 1 0 0)" fill="#1a2119" stroke="#343d2e"/>
+      <path d="m-48 58 25 15 96-116-25-15Z" fill="#222a20"/>
+      <g transform="matrix(.94 -.32 0 1 25 15)">
+        <circle r="64" fill="url(#rubber)" stroke="#0c130c" stroke-width="2"/>
+        <circle r="58" stroke="#646d51" stroke-opacity=".16"/>
+        <circle r="32" stroke="#131c12" stroke-width="6"/>
+        <circle r="24" fill="#0a110b" stroke="#303e2b" stroke-width="2"/>
+        <circle r="14" fill="#273324" stroke="#424f38"/>
+        <circle r="7" fill="#6a715a" stroke="#111b11" stroke-width="2"/>
+        <g fill="#7f866b"><circle cy="-10" r="1"/><circle cx="8.6" cy="5" r="1"/><circle cx="-8.6" cy="5" r="1"/></g>
+      </g>
+    </g>
+    <!-- Rounded protective side rail, in the robot's X/Z plane. -->
+    <path id="side-rail" d="M0-100v-67q0-53 52-53H380v120"/>
+    <g id="rail">
+      <use href="#side-rail" stroke="#172116" stroke-width="13"/>
+      <use href="#side-rail" stroke="url(#metal)" stroke-width="9"/>
+      <use href="#side-rail" transform="translate(-1 -2)" stroke="#e1dfc9" stroke-width="2" opacity=".8"/>
+      <path d="M219-218v118M369-215v115" stroke="#303e2c" stroke-width="8"/>
+      <path d="M218-218v118M368-215v115" stroke="#969d84" stroke-width="4"/>
+      <g fill="#848e75" stroke="#c2c7aa"><rect x="-8" y="-109" width="16" height="9" rx="2"/><rect x="371" y="-109" width="16" height="9" rx="2"/></g>
+    </g>
+    <!-- Paired lifting links with visible pivots and an actuator beneath.
+         The reference establishes the silhouette, not exact linkage dimensions. -->
+    <g id="lifting-side" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M20-105v-40l165-45v-70L20-205v60" stroke="#273122" stroke-width="18"/>
+      <path d="M20-105v-40l165-45v-70L20-205v60" stroke="url(#earth)" stroke-width="12"/>
+      <path d="M20-204 185-259M20-145 185-190" stroke="#e0cba2" stroke-width="2"/>
+      <path d="M225-112 110-232" stroke="#1c281c" stroke-width="20"/>
+      <path d="M225-112 163-177" stroke="#626f58" stroke-width="15"/>
+      <path d="M223-114 163-177" stroke="#b8bea4" stroke-width="5"/>
+      <path d="M163-177 110-232" stroke="#c6cbb5" stroke-width="6"/>
+      <path d="M162-178 111-231" stroke="#f1efda" stroke-width="1.5"/>
+      <path d="M226-110q34-15 8-55" stroke="#202c20" stroke-width="4"/>
+      <g fill="#606c55" stroke="#d2c3a1" stroke-width="2"><circle cx="20" cy="-145" r="9"/><circle cx="20" cy="-205" r="8"/><circle cx="185" cy="-190" r="8"/><circle cx="185" cy="-260" r="8"/><circle cx="225" cy="-112" r="7"/></g>
+      <g fill="#c9cbb4"><circle cx="20" cy="-145" r="3"/><circle cx="20" cy="-205" r="3"/><circle cx="185" cy="-190" r="3"/><circle cx="185" cy="-260" r="3"/><circle cx="225" cy="-112" r="2.5"/></g>
+    </g>
+  </defs>
+
+  <ellipse cx="475" cy="375" rx="365" ry="310" fill="url(#ambient)"/>
+  <g stroke="#6f7752" stroke-width="1" opacity=".22">
+    <path d="M83 305c65-88 135-36 191-98S366 67 458 87s78 90 148 69 169 28 190 107 58 89 32 161"/>
+    <path d="M100 320c65-88 131-29 187-91s94-141 168-121 89 89 153 68 146 24 165 95 66 89 35 159"/>
+    <path d="M120 333c58-75 129-26 181-91s88-131 153-111 84 84 147 65 137 19 154 83 66 85 37 146"/>
+    <path d="M141 348c51-72 127-30 175-94s76-121 139-101 82 81 144 62 114 15 136 72 64 80 38 134"/>
+    <path d="M155 585c85-15 110 80 205 38s136-22 201 7 112-57 207-38M143 608c89-13 112 81 219 38s135-21 201 6 119-55 216-31M129 630c104-18 135 87 243 37s133-16 196 5 122-49 220-30"/>
+  </g>
+  <g mask="url(#ground-mask)"><rect x="20" y="250" width="860" height="460" fill="url(#grid)"/><ellipse cx="456" cy="492" rx="340" ry="158" stroke="#8b956d" stroke-dasharray="3 10"/><ellipse cx="456" cy="492" rx="306" ry="138" stroke="#858660" stroke-opacity=".5"/></g>
+  <ellipse cx="450" cy="534" rx="286" ry="103" fill="url(#shadow)"/>
+  <ellipse cx="199" cy="517" rx="149" ry="57" fill="url(#shadow)" opacity=".65"/>
+  <g stroke="#8ae0cf" opacity=".6"><path d="m104 540 141-85M665 363l101-52 40 77M589 535l111 63" stroke-dasharray="4 7"/><circle cx="104" cy="540" r="5" fill="#233126"/><circle cx="104" cy="540" r="14" opacity=".4"/><circle cx="766" cy="311" r="5" fill="#233126"/><circle cx="766" cy="311" r="14" opacity=".4"/><circle cx="806" cy="388" r="4"/><circle cx="700" cy="598" r="5" fill="#233126"/><circle cx="700" cy="598" r="14" opacity=".4"/></g>
+
+  <!-- Far-side running gear. -->
+  <g opacity=".8"><use href="#wheel" transform="translate(451.8 318)"/><use href="#wheel" transform="translate(320.2 362.8)"/><use href="#wheel" transform="translate(188.6 407.6)"/></g>
+  <!-- Low, open chassis: the interior stays visible through the tube frame. -->
+  <g transform="matrix(.94 -.32 .78 .48 165 400)">
+    <rect width="380" height="200" fill="#252f22" stroke="#9ba287" stroke-width="3"/>
+    <path d="M10 12H368v176H10Z" stroke="#6b765c" stroke-width="5"/>
+    <path d="M100 12v176m125-176v176m120-176v176" stroke="#68715a" stroke-width="8"/>
+    <rect x="258" y="30" width="91" height="140" rx="3" fill="#121c13" stroke="#59694b" stroke-width="3"/>
+    <g fill="#b29a67" stroke="#746846"><rect x="268" y="43" width="69" height="22"/><rect x="268" y="71" width="69" height="22"/><rect x="268" y="99" width="69" height="22"/></g>
+    <path d="M274 153h54" stroke="#8ae0cf" stroke-width="2"/>
+  </g>
+  <g transform="matrix(.94 -.32 0 1 165 500)"><use href="#rail"/></g>
+  <!-- Exposed transverse cylindrical components. -->
+  <g transform="matrix(.94 -.32 .78 .48 165 385)">
+    <rect x="63" y="31" width="61" height="138" rx="15" fill="url(#cylinder)" stroke="#717e63" stroke-width="2"/>
+    <rect x="144" y="31" width="61" height="138" rx="15" fill="url(#cylinder)" stroke="#717e63" stroke-width="2"/>
+    <path d="M69 149h49m32 0h49M69 49h49m32 0h49" stroke="#252f22" stroke-width="8"/>
+    <path d="M93 33v134m81-134v134" stroke="#e5e5cf" stroke-width="2" opacity=".6"/>
+  </g>
+  <!-- Far lifting arm and paired transverse lifting members. -->
+  <g transform="matrix(.94 -.32 0 1 200.1 521.6)"><use href="#lifting-side"/></g>
+  <g stroke-linecap="round">
+    <path d="M218.9 310.2 304.7 363M374 202.4 459.8 255.2" stroke="#202c1f" stroke-width="14"/>
+    <path d="M218.9 310.2 304.7 363M374 202.4 459.8 255.2" stroke="url(#metal)" stroke-width="9"/>
+    <path d="M218.9 308.2 304.7 361M374 200.4 459.8 253.2" stroke="#dedcca" stroke-width="2"/>
+  </g>
+  <!-- Near arm is intentionally prominent: the robot's characteristic lift. -->
+  <g transform="matrix(.94 -.32 0 1 285.9 574.4)"><use href="#lifting-side"/></g>
+    <!-- The top grid is the implement lifting frame, not a cargo roof rack.
+      Matching earth-tone members visually trace the frame into the lifting links. -->
+    <g stroke-linecap="round"><path d="M395.3 201.6 551.3 297.6M503.4 164.8 659.4 260.8" stroke="#1c271b" stroke-width="13"/><path d="M395.3 201.6 551.3 297.6M503.4 164.8 659.4 260.8" stroke="url(#earth)" stroke-width="8"/><path d="M395.3 199.6 551.3 295.6M503.4 162.8 659.4 258.8" stroke="#e0cba2" stroke-width="1.5"/></g>
+  <!-- Near chassis beam and the distinctive curved side cage. -->
+  <g transform="matrix(.94 -.32 0 1 321 596)">
+    <rect y="-100" width="380" height="33" fill="url(#beam)" stroke="#a5ac92"/>
+    <path d="M6-96H374" stroke="#d2d4bc"/>
+    <path d="M50-76v14m140-14v14m140-14v14" stroke="#293726" stroke-width="13"/>
+    <use href="#rail"/>
+    <text x="261" y="-77" font-family="Consolas,monospace" font-size="12" letter-spacing="2" fill="#dde0c9">RHR / DeRo</text>
+  </g>
+  <!-- Front structural bumper and lifting mount feet, not a camera mast. -->
+  <g transform="matrix(.78 .48 0 1 165 500)">
+    <rect x="-6" y="-101" width="212" height="36" fill="url(#beam)" stroke="#b1b69e"/>
+    <path d="M-6-100H206" stroke="#d8dac3" stroke-width="2"/>
+    <path d="M32-109h19v10H32Zm117 0h19v10h-19Z" fill="#cad0b5" stroke="#728164"/>
+    <path d="M3-75v10h12v-10m170 0v10h12v-10" stroke="#bbc3a6" stroke-width="4"/>
+    <g fill="#3b4c32"><circle cx="40" cy="-105" r="2"/><circle cx="158" cy="-105" r="2"/></g>
+  </g>
+  <use href="#wheel" transform="translate(637.44 432.24)"/>
+  <use href="#wheel" transform="translate(505.84 477.04)"/>
+  <use href="#wheel" transform="translate(374.24 521.84)"/>
+
+  <!-- The implement mounts directly to both front lifting links, at X = 20.
+       Short mounting brackets reach the bucket back at X = -18.
+       Bucket spans Y = -5..205 and projects forward to X = -105. -->
+  <g id="implement-mount" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M218.9 310.2 183.18 322.36M218.9 370.2 183.18 382.36M304.7 363 268.98 375.16M304.7 423 268.98 435.16" stroke="#273122" stroke-width="17"/>
+    <path d="M218.9 310.2 183.18 322.36M218.9 370.2 183.18 382.36M304.7 363 268.98 375.16M304.7 423 268.98 435.16" stroke="url(#earth)" stroke-width="11"/>
+    <path d="M183.18 322.36v60m85.8-7.2v60" stroke="#a6ad90" stroke-width="10"/>
+    <g fill="#d0c2a0" stroke="#4f5b42" stroke-width="2"><circle cx="218.9" cy="310.2" r="7"/><circle cx="218.9" cy="370.2" r="7"/><circle cx="304.7" cy="363" r="7"/><circle cx="304.7" cy="423" r="7"/></g>
+    <g fill="#56654a"><circle cx="218.9" cy="310.2" r="2.5"/><circle cx="218.9" cy="370.2" r="2.5"/><circle cx="304.7" cy="363" r="2.5"/><circle cx="304.7" cy="423" r="2.5"/></g>
+  </g>
+  <g id="bucket-attachment" stroke-linejoin="round">
+    <!-- Far cheek, interior back and floor, then near cheek: an open scoop. -->
+    <path d="M144.18 298.36v105L62.4 421.2v-35Z" fill="#746344" stroke="#c5ad84" stroke-width="2"/>
+    <path d="M144.18 298.36 307.98 399.16v105l-163.8-100.8Z" fill="#746c50" stroke="#a99873" stroke-width="2"/>
+    <path d="M144.18 403.36 307.98 504.16 226.2 522 62.4 421.2Z" fill="#998562" stroke="#b6a27c" stroke-width="2"/>
+    <path d="m149 395 153 94m-134-156v66m46-38v66m46-38v66" stroke="#4e523a" stroke-width="3" opacity=".75"/>
+    <path d="M307.98 399.16v105L226.2 522v-35Z" fill="url(#earth)" stroke="#d4bb91" stroke-width="2"/>
+    <path d="M298 419v77l-62 13v-16Z" stroke="#887452" stroke-width="2"/>
+    <!-- Reinforced cutting edge across the open mouth. -->
+    <path d="M62.4 421.2 226.2 522l-6 8L56.4 429.2Z" fill="#b9bba1" stroke="#454e38" stroke-width="2"/>
+    <path d="M62.4 421.2 226.2 522" stroke="#ded9bb" stroke-width="3"/>
+    <path d="M144.18 298.36 307.98 399.16" stroke="#d8c29a" stroke-width="5"/>
+    <g fill="#536046"><circle cx="86" cy="440" r="2"/><circle cx="126" cy="465" r="2"/><circle cx="166" cy="490" r="2"/><circle cx="206" cy="515" r="2"/></g>
+  </g>
+
+  <!-- Callouts explain the lift's purpose and the accessory shown. -->
+  <path d="M291 260 249 188h-77" stroke="#cdb591" stroke-opacity=".65" stroke-dasharray="3 5"/>
+  <circle cx="291" cy="260" r="3" fill="#cdb591"/>
+  <path d="M259 482 303 559h60" stroke="#cdb591" stroke-opacity=".65" stroke-dasharray="3 5"/>
+  <circle cx="259" cy="482" r="3" fill="#cdb591"/>
+  <g font-family="Consolas,monospace" font-size="8" letter-spacing="1.4"><text x="146" y="160" fill="#cdb591">IMPLEMENT LIFT FRAME</text><text x="146" y="176" font-size="7" fill="#a9b197">BUCKET / FORK / SNOW BLADE</text><text x="305" y="575" font-size="7" fill="#cdb591">BUCKET ATTACHED</text><text x="65" y="565" fill="#99a68a">PEER / 02</text><text x="734" y="289" fill="#99a68a">PEER / 03</text><text x="708" y="624" fill="#99a68a">PEER / 04</text><text x="517" y="671" fill="#a9b197">RANCH HAND ROBOTICS LLC</text></g>
+  <path d="M410 654h87l12 15" stroke="#777f5f"/>
+  <g stroke="#b4a981"><path d="M135 354v-12h12m576-91h12v12M156 488h-12v-12m591 58v12h-12"/></g>
+</svg>
